@@ -3,7 +3,7 @@ import Homepage from './_components/home-page/page'
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Homepage />
     </main>
   )

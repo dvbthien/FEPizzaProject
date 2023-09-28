@@ -13,7 +13,7 @@ const colorList = {
 const ButtonView = (props: ButtonProps) => {
     
     return (
-        <a href={props.url} className={`transition-all duration-700 buttonView ${colorList[props.color]} hover:bg-[100%]`}>
+        <a href={props.url} className={`transition-all duration-700 button-view ${colorList[props.color]} hover:bg-[100%]`}>
             <span>VIEW <br /> {props.title}</span>
         </a>
     )
