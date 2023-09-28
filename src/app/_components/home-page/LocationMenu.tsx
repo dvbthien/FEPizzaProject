@@ -34,11 +34,7 @@ const LocationMenu = () => {
                     </div>
                     <div className="relative w-full h-auto mt-10 after:content-[''] after:h-full after:absolute after:top-0 after:left-0 after:w-full after:bg-[rgb(0,0,0)]/30">
                         <a href="" className="absolute text-[1.46413vw] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1] hover:after:hidden after:content-[''] after:h-[2px] after:absolute after:bottom-0 after:left-0 after:w-full after:bg-white">SHOP LIST</a>
-                        <Image src={'/img/shoplist.jpg'} alt=""
-                            width="0"
-                            height="0"
-                            sizes="100vw"
-                            className="w-full h-auto" />
+                        <Image src={'/img/shoplist.jpg'} alt="" width="0" height="0" sizes="100vw" className="w-full h-auto" />
                     </div>
 
                 </div>
