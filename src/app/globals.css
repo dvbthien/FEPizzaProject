@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .arrow-hover {
+    @apply after:content-[''] after:absolute after:top-[15%] after:bg-[url('/img/arrow.svg')] after:bg-no-repeat after:bg-contain after:bg-center after:right-[-3.29429vw] after:w-[2.19619vw] after:h-[2.56223vw]
+  }
+
+  .list-country-banner {
+    @apply relative text-white opacity-50 hover:opacity-100 hover:arrow-hover
+  }
+
+  .score-received {
+    @apply text-[2.56223vw] pt-[0.21962vw] px-[0.21962vw] bg-black group-hover:bg-[#7daeeb]
+  }
+
+  .button-view {
+    @apply w-[10.2489vw] h-[7.32064vw] text-[1.46413vw] text-center leading-none inline-flex justify-center items-center rounded-[50%] border bg-[length:400%] bg-[0] 
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
