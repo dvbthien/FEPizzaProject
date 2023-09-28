@@ -43,3 +43,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 2px;
+  }
+ 
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #27272E;
+  }
+ 
+  .scrollbar::-webkit-scrollbar-track {
+    background: rgba(36,46,82,.2)
+  }
+ }
+ 
