@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <section className="h-screen w-full relative z-[1]">
             <div className="h-full w-full absolute overflow-hidden top-0 left-0 -z-[1]">
-                <video className="min-h-full min-w-full h-auto w-auto absolute block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./video/intro-piz-banner.mp4" loop={true} muted={true} autoPlay={true} playsInline={true}></video>
+                <video className="object-cover min-h-full min-w-full h-auto w-auto absolute block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./video/intro-piz-banner.mp4" loop={true} muted={true} autoPlay={true} playsInline={true}></video>
             </div>
             <ul className="absolute bottom-[1.90337vw] left-[2.92826vw] font-normal leading-none">
                 <li className="list-country-banner"><a href="" className="text-[4.68521vw]">Vietnam</a></li>
