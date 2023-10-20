@@ -1,8 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'atlas-grotesk';
+  font-weight: normal;
+  src: url('/fonts/Atlas-Grotesk/AtlasGrotesk-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'atlas-grotesk';
+  font-weight: thin;
+  src: url('/fonts/Atlas-Grotesk/AtlasGrotesk-Thin.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'atlas-grotesk';
+  font-weight: light;
+  src: url('/fonts/Atlas-Grotesk/AtlasGrotesk-light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'atlas-grotesk';
+  font-weight: medium;
+  src: url('/fonts/Atlas-Grotesk/AtlasGrotesk-Medium.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Century Condensed Bold';
+  /* font-weight: bold; */
+  src: url('/fonts/Century-Condensed/Century-Condensed-Bold.ttf') format('ttf');
+}
+
 
 @layer components {
+  body {
+    @apply font-atlas-grotesk font-light
+  }
   .arrow-hover {
     @apply after:content-[''] after:absolute after:top-[15%] after:bg-[url('/img/arrow.svg')] after:bg-no-repeat after:bg-contain after:bg-center after:right-[-3.29429vw] after:w-[2.19619vw] after:h-[2.56223vw]
   }
@@ -17,6 +52,13 @@
 
   .button-view {
     @apply w-[10.2489vw] h-[7.32064vw] text-[1.46413vw] text-center leading-none inline-flex justify-center items-center rounded-[50%] border bg-[length:400%] bg-[0] 
+  }
+
+  .header-transparent {
+    @apply text-white bg-transparent
+  } 
+  .header-white {
+    @apply text-black bg-[#F4F2EF]
   }
 }
 
