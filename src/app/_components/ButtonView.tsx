@@ -6,8 +6,9 @@ type ButtonProps = {
 }
 
 const colorList = {
-    white: 'border-white bg-[linear-gradient(45deg,_white_50%,_transparent_50%)] hover:text-white',
-    blue: 'border-[#02499D] bg-[linear-gradient(45deg,_#02499D_50%,_transparent_50%)] text-white hover:text-[#02499D]'
+    white: 'border-white bg-[linear-gradient(45deg,_white_50%,_transparent_50%)] text-black hover:text-white',
+    blue: 'border-[#02499D] bg-[linear-gradient(45deg,_#02499D_50%,_transparent_50%)] text-white hover:text-[#02499D]',
+    blueGroup: 'border-[#02499D] bg-[linear-gradient(45deg,_#02499D_50%,_transparent_50%)] text-white group-hover:text-[#02499D] group-hover:bg-[100%]'
 }
 
 const ButtonView = (props: ButtonProps) => {
